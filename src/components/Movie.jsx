@@ -24,10 +24,10 @@ class Movie extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:3001/api/movies')
+        fetch('http://localhost:3035/api/product')
             .then(res => res.json())
             .then(response => {
-                this.setState({ movieList: response.data })
+                this.setState({ movieList: response.products })
             })
             .catch(err => console.log(err))
     }
@@ -35,7 +35,7 @@ class Movie extends React.Component {
         return (
             <>
                 {/*<!-- MOVIES LIST -->*/}
-                <h1 className="h3 mb-2 text-gray-800 ">All the movies in the Database</h1>
+                <h1 className="h3 mb-2 text-gray-800 ">Listado de Productos</h1>
 
                 {/*<!-- DataTales Example -->*/}
                 <div className="card shadow mb-4">
@@ -45,10 +45,10 @@ class Movie extends React.Component {
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Titulo</th>
-                                        <th>Calificación</th>
-                                        <th>Premios</th>
-                                        <th>Duración</th>
+                                        <th>Nombre</th>
+                                        <th>Descripcion</th>
+                                        <th>Detalle</th>
+                                        <th>Categoria</th>
                                     </tr>
                                 </thead>
                                 <tbody>

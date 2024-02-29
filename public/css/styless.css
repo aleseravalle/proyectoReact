@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/*sideBar*/
+div #wrapper {
+    background-color: #2f2989;
+}
+.navbar-nav {
+    margin: 20px;   
+}
+.sidebar-heading {
+    display: none;
+}
+.nav-item a{
+    color: white;   
+}
+
+/**topBar**/
+nav.navbar{
+    background-color: #bee4e7;
+}
+.fa, .far {
+    color: #2f2989;
+}
+
+/**categorias**/

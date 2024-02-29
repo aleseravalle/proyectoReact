@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 
 function SideBar() {
     return (
-        <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul className="navbar-nav" id="accordionSidebar">
 
 			{/* <!-- Sidebar - Brand --> */}
 			<a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
 				<div className="sidebar-brand-icon">
-					<img className="w-100" src="/images/logo-DH.png" alt="Digital House" />
+					<img className="w-100" src="/images/logo 2.png" alt="JACA-TECH" width='50px' height='50px'/>
 				</div>
 			</a>
 
@@ -18,7 +18,7 @@ function SideBar() {
 			<li className="nav-item active">
 				<Link className="nav-link" href="/">
 					<i className="fas fa-fw fa-tachometer-alt"></i>
-					<span>Dashboard - DH movies</span>
+					<span>JACA-TECH</span>
 				</Link>
 			</li>
 
@@ -32,7 +32,7 @@ function SideBar() {
 			<li className="nav-item">
 				<Link className="nav-link collapsed" to="/last-movie">
 					<i className="fas fa-fw fa-folder"></i>
-					<span>Ultima Pelicula</span>
+					<span>Ultimo Producto</span>
 				</Link>
 			</li>
 
@@ -40,7 +40,7 @@ function SideBar() {
 			<li className="nav-item">
 				<Link className="nav-link" to="/genres">
 					<i className="fas fa-fw fa-chart-area"></i>
-					<span>Generos</span>
+					<span>Categorias</span>
 				</Link>
 			</li>
 
@@ -48,7 +48,7 @@ function SideBar() {
 			<li className="nav-item">
 				<Link className="nav-link" to="/movies">
 					<i className="fas fa-fw fa-table"></i>
-					<span>Peliculas</span>
+					<span>Productos</span>
 				</Link>
 			</li>
 			<li className="nav-item">
