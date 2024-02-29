@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Genre from './Genre'
+import Categorie from './Categorie'
 
-class GenresInDb extends React.Component {
+class CategorieInDb extends React.Component {
     state = {
-        genresList: [],
+        categorieList: [],
         isSecondaryBg: false
     }
 
@@ -12,7 +12,7 @@ class GenresInDb extends React.Component {
         fetch('http://localhost:3035/api/product')
             .then(res => res.json())
             .then(response => {
-                this.setState({ genresList: response.countByCategory })
+                this.setState({ categorieList: response.countByCategory })
             })
             .catch(err => console.log(err))
     }
@@ -30,8 +30,8 @@ class GenresInDb extends React.Component {
                     </div>
                     <div className={`card-body ${this.state.isSecondaryBg && 'bg-secondary'}`}>
                         <div className="row">
-                            {this.state.genresList.map((genre, index) =>
-                                <Genre key={index} name={genre.name} count={genre.count} />
+                            {this.state.categorieList.map((categorie, index) =>
+                                <Categorie key={index} name={categorie.name} count={categorie.count} />
                             )}
                         </div>
                     </div>
@@ -41,4 +41,4 @@ class GenresInDb extends React.Component {
     }
 }
 
-export default GenresInDb
+export default CategorieInDb

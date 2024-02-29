@@ -1,5 +1,5 @@
 import ContentRowTop from "./ContentRowTop"
-import Movie from './Movie'
+import Product from './Product'
 
 function ContentWrapper() {
 	return (
@@ -7,7 +7,7 @@ function ContentWrapper() {
 			{/* <!-- Content Row Top --> */}
 			< ContentRowTop />
 			{/* <!--End Content Row Top--> */}
-			< Movie />
+			< Product />
 		</>
 	)
 }

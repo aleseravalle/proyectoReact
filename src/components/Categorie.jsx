@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-function Genre(props) {
+function Categorie(props) {
     return (
         <div className="col-lg-6 mb-4">
             <div className="card shadow">
@@ -14,8 +14,8 @@ function Genre(props) {
     )
 }
 
-Genre.propTypes = {
+Categorie.propTypes = {
     name: PropTypes.string.isRequired
 }
 
-export default Genre
+export default Categorie

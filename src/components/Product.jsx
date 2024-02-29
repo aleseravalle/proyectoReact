@@ -1,4 +1,4 @@
-import MovieList from './MovieList';
+import ProductList from './ProductList';
 import React from 'react';
 
 // const movies = [
@@ -18,16 +18,16 @@ import React from 'react';
 //     }
 // ];
 
-class Movie extends React.Component {
+class Product extends React.Component {
     state = {
-        movieList: [],
+        productList: [],
     }
 
     componentDidMount() {
         fetch('http://localhost:3035/api/product')
             .then(res => res.json())
             .then(response => {
-                this.setState({ movieList: response.products })
+                this.setState({ productList: response.products })
             })
             .catch(err => console.log(err))
     }
@@ -52,8 +52,8 @@ class Movie extends React.Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {this.state.movieList.map((movie, index) =>
-                                        <MovieList  {...movie} key={index} />
+                                    {this.state.productList.map((product, index) =>
+                                        <ProductList  {...product} key={index} />
                                     )}
                                 </tbody>
                             </table>
@@ -65,4 +65,4 @@ class Movie extends React.Component {
     }
 }
 
-export default Movie;
+export default Product;

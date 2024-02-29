@@ -3,8 +3,8 @@ import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
 import LastMovieInDb from './components/LastMovieInDb'
 import ContentWrapper from './components/ContentWrapper'
-import GenresInDb from './components/GenresInDb'
-import Movie from './components/Movie'
+import CategorieInDb from './components/CategorieInDb'
+import Product from './components/Product'
 import SearchMovies from './components/SearchMovies'
 
 const routes = createBrowserRouter([
@@ -21,12 +21,12 @@ const routes = createBrowserRouter([
         element: <LastMovieInDb />,
       },
       {
-        path: '/genres',
-        element: <GenresInDb />,
+        path: '/categorie',
+        element: <CategorieInDb />,
       },
       {
-        path: '/movies',
-        element: <Movie />,
+        path: '/Product',
+        element: <Product />,
       },
       {
         path: '/search',
