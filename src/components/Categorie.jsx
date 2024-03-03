@@ -15,7 +15,8 @@ function Categorie(props) {
 }
 
 Categorie.propTypes = {
-    name: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired,
+    count: PropTypes.number.isRequired
 }
 
 export default Categorie

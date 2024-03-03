@@ -14,10 +14,10 @@ function ProductList(props) {
 
 ProductList.propTypes = {
   id: PropTypes.number,
-  title: PropTypes.string,
-  rating: PropTypes.string,
-  awards: PropTypes.string,
-  length: PropTypes.string
+  name: PropTypes.string,
+  description: PropTypes.string,
+  detail: PropTypes.string,
+  categorie: PropTypes.string
 };
 
 export default ProductList;
