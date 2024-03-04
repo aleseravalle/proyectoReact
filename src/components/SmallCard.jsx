@@ -7,8 +7,8 @@ function SmallCard(props) {
                 <div className="card-body">
                     <div className="row no-gutters align-items-center">
                         <div className="col mr-2">
-                            <div className={`text-xs font-weight-bold text-${props.color} text-uppercase mb-1`}>{props.title}</div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">{props.quantity}</div>
+                            <div className={`text-xs font-weight-bold text-${props.color} text-uppercase mb-1`}>{props.name}</div>
+                            <div className="h5 mb-0 font-weight-bold text-gray-800">{props.count}</div>
                         </div>
                         <div className="col-auto">
                             <i className={`fas ${props.icon} fa-2x text-gray-300`}></i>
@@ -21,9 +21,9 @@ function SmallCard(props) {
 }
 
 SmallCard.propTypes = {
-    title: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     color: PropTypes.oneOf(['primary', 'success', 'warning']).isRequired, //con oneOf esta propiedad recibe solo estos 3 valores
-    quantity: PropTypes.oneOfType([ // con oneOfTypes recibe uno de esos 2 tipos de datos
+    count: PropTypes.oneOfType([ // con oneOfTypes recibe uno de esos 2 tipos de datos
         PropTypes.number,
         PropTypes.string
     ]).isRequired,
@@ -31,9 +31,9 @@ SmallCard.propTypes = {
 }
 
 SmallCard.defaultProps = {
-    title: '',
+    name: '',
     color: 'success',
-    quantity: 0,
+    count: 0,
     icon: 'fa-film'
 }
 
