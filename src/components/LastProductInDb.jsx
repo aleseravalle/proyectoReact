@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LastMovieInDb() {
+function LastProductInDb() {
 
     const [product, setProduct] = React.useState({})
     React.useEffect(() => {
@@ -44,4 +44,4 @@ function LastMovieInDb() {
     )
 }
 
-export default LastMovieInDb
+export default LastProductInDb

@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import App from './App'
-import LastMovieInDb from './components/LastMovieInDb'
+import LastProductInDb from './components/LastProductInDb'
 import ContentWrapper from './components/ContentWrapper'
 import CategorieInDb from './components/CategorieInDb'
 import Product from './components/Product'
@@ -17,8 +17,8 @@ const routes = createBrowserRouter([
         element: <ContentWrapper />,
       },
       {
-        path: '/last-movie',
-        element: <LastMovieInDb />,
+        path: '/last-product',
+        element: <LastProductInDb />,
       },
       {
         path: '/categorie',
